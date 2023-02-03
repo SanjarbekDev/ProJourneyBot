@@ -14,5 +14,18 @@ async def imagenie(prompt : str , size : str):
     )
     return image
 
+async def Create_variant(file_path):
+    openai.api_key = OPENAI_API_KEY
+    dirs = file_path
+    with open(dirs , "rb") as image:
+        variant = openai.Image.create_variation(
+            image = image,
+            n = 1 
+        )
+
+    return variant
+
+
+
 
 

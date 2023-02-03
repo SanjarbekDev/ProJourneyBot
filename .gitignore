@@ -6,6 +6,10 @@
  *.lo 
  *.pyc 
   
+ #environs varables
+ *.env 
+ *.ini
+
  # Compiled Dynamic libraries 
  *.so 
  *.dylib 

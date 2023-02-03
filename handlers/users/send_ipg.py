@@ -7,10 +7,10 @@ from utils.misc.API import imagenie
 from data.config import ADMINS
 from loader import bot
 
-@dp.message_handler(commands='imagegenerate')
+@dp.message_handler(commands='imagine')
 async def imgsend(msg : types.Message):
     try:
-        pattern = re.compile('(/imagegenerate) ?(\w\D+)? ?(\w\D+)?')
+        pattern = re.compile('(/imagine) ?(\w\D+)? ?(\w\D+)?')
         parse_d=pattern.match(msg.text)
         prompt = parse_d.group(2)
 
